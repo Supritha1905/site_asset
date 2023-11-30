@@ -1,0 +1,385 @@
+body{
+    font-family:serif;
+}
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Style the header */
+header {
+    background-color:#006e75; /* Change to your desired background color */
+    color: #fff; /* Change to your desired text color */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo {
+    text-decoration: none;
+    color: #fff; /* Change to your desired text color */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+/* Style the navigation menu */
+.menu {
+    list-style: none;
+    display: flex;
+}
+.menu.show{
+  display: block;
+}
+
+.menu li {
+    margin-right: 20px; /* Adjust the margin between menu items */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff; /* Change to your desired text color */
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: normal;
+}
+
+/* Hover effect on menu items */
+.menu a:hover {
+    border-bottom: 2px solid #fff; /* Change to your desired hover effect */
+}
+
+/* Style the login and sign up links */
+.menu a.login,
+.menu a.signup {
+    /* Change to your desired background color */
+    color: #fff; /* Change to your desired text color */
+    padding: 10px 15px; /* Adjust the padding as needed */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+
+
+/* Reset body margin to accommodate the fixed footer */
+body {
+    margin-bottom: 50px; /* Adjust the margin to match your footer height */
+}
+
+/* Style the middle content section */
+.middle-content {
+    text-align: center;
+    padding: 50px; /* Adjust the padding as needed */
+}
+
+.middle-content h1 {
+    font-size: 60px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    color:white;
+}
+
+.middle-content p {
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    color:white;
+    text-align: center;
+    font-family: mint_ 33b 8c 7px; 
+}
+
+.learn-more-button{
+    display:inline-block;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color:white; /* Change to your desired background color (white) */
+    color:black; /* Change to your desired text color (black) */
+    text-decoration: none;
+    border-radius: 5px;
+}
+.learn-more-link {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color:#0b978e; /* Change to your desired background color (white) */
+    color:#fff; /* Change to your desired text color (black) */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.first{
+    background-color:#006e75;
+    margin: 0px;
+    padding: 0px;
+}
+
+.middle-content {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    text-align: center;
+    z-index: 1; /* Ensure the text content is above the images */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#image-container1 {
+    order: 1; /* Set the order of the first image to 1 */
+}
+
+#image-container2 {
+    order: 3; /* Set the order of the second image to 3 */
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 20px;
+}
+
+.text-content {
+    order: 2; /* Set the order of the text content to 2 */
+}
+/* Add styles for mobile menu toggle */
+.mobile-menu-toggle {
+    display: none; /* Hide the toggle button by default */
+    cursor: pointer;
+}
+.mobile-menu-toggle img {
+    width: 30px; /* Adjust the icon size as needed */
+}
+/* CSS for columns */
+.row {
+    display: flex;
+    justify-content: space-between;
+    /* Adjust this property to change spacing between columns */
+}
+.column{
+  width:100%;
+  box-sizing: border-box;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+footer .column {
+    flex: 1;
+    margin-right: 0px; /* Adjust the margin between columns */
+}
+
+/* Reset margin for the last column */
+footer .column:last-child {
+    margin-right: 0;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* Style the middle content section */
+
+.learn-more-button1{
+    display:inline-block;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color:#006e75; /* Change to your desired background color (white) */
+    color:#fff; /* Change to your desired text color (black) */
+    text-decoration: none;
+    border-radius: 5px;
+}
+.image-and-content{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+.image-containers{
+    flex: 1;
+    max-width: 400px;
+    margin: 0 20px;
+}
+.text-contents{
+    flex:1;
+    max-width: 400px;
+    margin: 0  20px;
+}
+.text-contents h1{
+    font-size:50px;
+}
+.center{
+    text-align: center;
+}
+.center h1{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.center p{
+    font-size: 1.2em;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color:#006e75;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: row-reverse;
+  }
+  .image {
+    flex: 1;
+    margin-left:20px;
+  }
+  .image img{
+    width:70%;
+    max-width:100%;
+    height:auto; 
+  }
+  .image-info{
+    flex:1;
+  }
+  .image-slider {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-slider img {
+    display:block ;
+    width: 70%;
+    padding: 10%;
+    margin-bottom: 10%;
+
+  }
+  
+  .image-slider .active {
+    display: block;
+  }
+.image-slider .action{
+    opacity: 1;
+}
+.slide-button{
+    margin-top: 10px;
+}
+.arrow{
+    font-size: 24px;
+    background: none;
+    cursor: pointer;
+    outline:none;
+}
+  .info{
+    background-color: #006e75;
+    text-align: center;
+    color: #fff;
+
+  }
+  .memu-toggle li{
+    height: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    /* Additional styles for the mobile menu button/icon */
+    .mobile-menu-toggle {
+      display:block; /* Hide the toggle button by default */
+      cursor: pointer;
+  }
+}
+.desktop-image {
+  display: block;
+}
+
+/* CSS for mobile view - hide the images */
+@media (max-width: 768px) {
+  .desktop-image {
+      display: none;
+  }
+}
+/* Media query for smaller screens (mobile) */
+@media (max-width: 768px) {
+  .row {
+      display: flex;
+      flex-wrap:wrap;
+  }
+  .column {
+      width: 50%; /* Show two columns in each row for mobile */
+      margin-bottom: 10px;
+  }
+  
+}
+.section{
+    text-align: center;
+}
+.section h1,
+.section p{
+    margin: 0;
+}
+  
+/* Common styles for table and its cells */
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .content-table td {
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .content-table img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .content-table h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .content-table p {
+    margin: 8px 0;
+    font-size: 1em;
+  }
+  .layout1,
+    .layout2,
+    .layout3,
+    .layout4,
+    .layout5 {
+      /* Default styles for all layouts */
+      background-color: #f2f2f2;
+      padding:30%;
+      margin: 15%;
+      align-items: center;
+      
+       }
+          @media screen and (max-width: 768px) {
+        .content-table {
+          display: block; /* Change to block layout for mobile */
+        }
+      
+        .content-table td {
+          display: block; /* Each cell occupies full width on mobile */
+          border: none; /* Remove border between cells */
+          padding: 10px; /* Adjust cell padding for mobile */
+        }
+      }
+      /* For mobile view */
+    @media screen and (max-width: 768px) {
+        /* Hide all cells except for the first column */
+        .content-table td:not(:first-child) {
+          display:block;
+          align-items: center;
+        }
+        
+      }
