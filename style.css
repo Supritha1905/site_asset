@@ -285,7 +285,7 @@ footer ul{
     transition: all 0.3s ease-in-out;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
     .menu {
         display: none;
     }
@@ -300,13 +300,13 @@ footer ul{
 }
 
 /* CSS for mobile view - hide the images */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .desktop-image {
       display: none;
   }
 }
 /* Media query for smaller screens (mobile) */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .row {
       display: flex;
       flex-wrap:wrap;
@@ -363,7 +363,7 @@ footer ul{
       align-items: center;
       
        }
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 700px) {
         .content-table {
           display: block; /* Change to block layout for mobile */
         }
@@ -375,11 +375,17 @@ footer ul{
         }
       }
       /* For mobile view */
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 700px) {
         /* Hide all cells except for the first column */
         .content-table td:not(:first-child) {
           display:block;
           align-items: center;
         }
         
+      }
+      @media screen and (max-width: 700px) {
+        .image-container{
+          display: none; /* Change to block layout for mobile */
+        }
+      
       }
